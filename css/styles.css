@@ -89,3 +89,78 @@ header {
   margin-right: 32px;
   color: #777;
 }
+
+.spicestore {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+a {
+  color: inherit; 
+  text-decoration: inherit; 
+}
+
+.spicestore h1 {
+  font-size: 68px;
+  color: #4c884c;  
+  margin-top: -1px;
+  margin-bottom: -1px;
+  cursor: pointer;
+  padding-top: 5px;
+  flex-shrink: 0;
+}
+
+.word2 {
+color: #ddd;
+} 
+
+.tooltip .tooltiptext {
+  font-size: 12px;
+  visibility: hidden;
+  width: 80px;
+  background-color: #777;
+  color: #fff;
+  text-align: center;
+  padding: 3px 3px;
+  border-radius: 2px;
+  position: sticky;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.search {
+  display: inline-block;
+  font-size: 18px;
+  padding-top:45px;
+}
+
+.borders {
+  border: 1px solid #eee;
+}
+input {
+  border-top-width: 12px;
+  border-bottom-width: 12px;
+  border-left-width: 12px;
+  border-right-width: 12px;
+  border-color: transparent;
+  outline: transparent;
+  margin-right: 5px;
+}
+
+input::placeholder {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+.search-icon {
+  border-color: transparent;
+  outline: transparent;
+  background-color: #fff;
+  color: #777;
+  cursor: pointer;
+}
