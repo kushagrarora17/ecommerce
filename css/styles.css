@@ -1,8 +1,7 @@
 body {
   background-color: #fff;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   color: #555;
-  
 }
 
 * {
@@ -29,7 +28,6 @@ header {
   list-style: none;
   margin: 0;
 }
-
 
 .main-nav li {
   display: inline-block;
@@ -94,16 +92,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 32px;
 }
 
 a {
-  color: inherit; 
-  text-decoration: inherit; 
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .spicestore h1 {
   font-size: 68px;
-  color: #4c884c;  
+  color: #4c884c;
   margin-top: -1px;
   margin-bottom: -1px;
   cursor: pointer;
@@ -112,30 +111,13 @@ a {
 }
 
 .word2 {
-color: #ddd;
-} 
-
-.tooltip .tooltiptext {
-  font-size: 12px;
-  visibility: hidden;
-  width: 80px;
-  background-color: #777;
-  color: #fff;
-  text-align: center;
-  padding: 3px 3px;
-  border-radius: 2px;
-  position: sticky;
-  z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
+  color: #ddd;
 }
 
 .search {
   display: inline-block;
   font-size: 18px;
-  padding-top:45px;
+  padding-top: 45px;
 }
 
 .borders {
@@ -164,3 +146,60 @@ input::placeholder {
   color: #777;
   cursor: pointer;
 }
+
+.menu-list {
+  list-style: none;
+  margin: 0;
+  border: 2px solid #ddd;
+  padding: 0 8px;
+  font-size: 0;
+}
+
+.menu-list > li {
+  display: inline-block;
+  height: 64px;
+  border-right: 1px solid #ddd;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 0 30px;
+  line-height: 64px;
+  transition: background-color 600ms ease;
+}
+
+.menu-list > li:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+
+.submenu-list {
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  border: 2px solid #ddd;
+  padding: 0 0px;
+  font-size: 0;
+  /* TODO */
+  width: 100%;
+  left: 0;
+  top: 60px;
+  display: none;
+}
+
+.submenu-list > li {
+  display: inline-block;
+  height: 60px;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 0 16px;
+  line-height: 60px;
+  color: #555;
+  text-transform: uppercase;
+}
+
+.menu-list > li:hover .submenu-list {
+  display: block;
+}
+
+
+
