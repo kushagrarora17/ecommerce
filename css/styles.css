@@ -116,7 +116,6 @@ a {
 
 .search {
   display: inline-block;
-  font-size: 18px;
   padding-top: 45px;
 }
 
@@ -140,6 +139,7 @@ input::placeholder {
 }
 
 .search-icon {
+  padding-right: 8px;
   border-color: transparent;
   outline: transparent;
   background-color: #fff;
@@ -173,17 +173,25 @@ input::placeholder {
 
 
 .submenu-list {
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
   position: absolute;
+  z-index: 2;
   list-style: none;
   margin: 0;
-  border: 2px solid #ddd;
+  /* border: 2px solid #ddd; */
   padding: 0 0px;
   font-size: 0;
   /* TODO */
   width: 100%;
   left: 0;
-  top: 60px;
+  top: 65px;
   display: none;
+  background-color: #fff;
 }
 
 .submenu-list > li {
@@ -199,6 +207,55 @@ input::placeholder {
 
 .menu-list > li:hover .submenu-list {
   display: block;
+}
+
+.img-container {
+  position: relative;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0;
+  padding: 50px 0;
+  height: 320px;
+  width: 100%;
+  background-size: cover;
+}
+
+.title1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 45px;
+  padding-bottom: 90px;
+}
+
+.title1 > h2 {
+  font-weight: lighter;
+  line-height: 0;
+  padding-top: 50px;
+}
+
+.title1 > h3 {
+  font-size: 65px;
+  font-weight: bolder;
+}
+
+.para {
+  background: black; 
+  background: rgba(117, 222, 96, 0.5); 
+  color: #f1f1f1; 
+  padding: 20px 0;
+  text-align: center;
+  position: absolute;
+  bottom: 50px;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  font-size: 12px;
 }
 
 
