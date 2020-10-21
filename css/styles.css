@@ -224,10 +224,47 @@ input::placeholder {
   background-repeat: no-repeat;
   height: 360px;
   padding-top: 32px;
+  animation: 12s autoplay infinite;
+}
+
+.banner > * {
+  animation: 12s autoplay infinite;
+  z-index: -1
+}
+
+@keyframes autoplay {
+  0% {z-index: 0}
+  33.32% {z-index: 0}
+  33.33% {z-index: -1}
 }
 
 .banner.bg-1 {
   background-image: url("../images/slide-1.jpg");
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 3;
+  animation-delay: 0s;
+}
+
+.banner.bg-2 {
+  background-image: url("../images/slide-2.jpg");
+  /* display: none; */
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  animation-delay: 4s;
+}
+
+.banner.bg-3 {
+  background-image: url("../images/slide-3.jpg");
+  /* display: none; */
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  animation-delay: 8s;
 }
 
 .banner-title {
@@ -258,3 +295,5 @@ input::placeholder {
   margin: 0 auto;
   line-height: 1.7;
 }
+
+
