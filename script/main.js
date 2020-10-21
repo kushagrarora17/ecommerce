@@ -1,5 +1,10 @@
 let menuBar = document.getElementById("js-menu-bar");
 
+// let bannerContainer = document.getElementsByClassName("banner-container");
+// let sliderImg1 = document.getElementById("js-slider1");
+// let sliderImg2 = document.getElementById("js-slider2");
+// let sliderImg3 = document.getElementById("js-slider3");
+
 console.dir(menuBar);
 
 // window.addEventListener("scroll", function(ev) {
@@ -32,3 +37,9 @@ setInterval( function () {
     }
   }
 }, 500);
+
+// setTimeout(function(){
+//   var v = object.style.zIndex;
+
+  
+// },3000)
