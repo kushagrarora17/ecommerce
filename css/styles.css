@@ -235,6 +235,7 @@ input::placeholder {
 .banner > * {
   animation: 12s autoplay infinite;
   z-index: -1
+  /* opacity: 0.0; */
 }
 
 @keyframes autoplay {
@@ -242,6 +243,14 @@ input::placeholder {
   33.32% {z-index: 0}
   33.33% {z-index: -1}
 }
+
+/* @keyframes autoplay {
+  0% {opacity: 0.0}
+  4% {opacity: 1.0}
+  33.33% {opacity: 1.0}
+  37.33% {opacity: 0.0}
+  100% {opacity: 0.0}
+} */
 
 .banner.bg-1 {
   background-image: url("../images/slide-1.jpg");
@@ -301,6 +310,17 @@ input::placeholder {
   line-height: 1.7;
 }
 
+.bg-2 .details {
+  background: #777;
+  opacity: 0.5;
+  color: #fff;
+}
+
+.bg-3 .details {
+  background: #eee;
+  opacity: 0.5;
+  color: #000;
+}
 
 section.gutter {
   padding-left: 16px;
