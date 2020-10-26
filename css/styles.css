@@ -218,10 +218,10 @@ input::placeholder {
 
 .banner-container {
   height: 392px;
+  position: relative;
 }
 
 .banner {
-  position: relative;
   text-align: center;
   background-position: center;
   background-size: cover;
@@ -229,55 +229,46 @@ input::placeholder {
   /* TODO : height 360px not working? */
   height: 360px;
   padding-top: 32px;
-  animation: 12s autoplay infinite;
-}
-
-.banner > * {
-  animation: 12s autoplay infinite;
-  z-index: -1
-  /* opacity: 0.0; */
-}
-
-@keyframes autoplay {
-  0% {z-index: 0}
-  33.32% {z-index: 0}
-  33.33% {z-index: -1}
-}
-
-/* @keyframes autoplay {
-  0% {opacity: 0.0}
-  4% {opacity: 1.0}
-  33.33% {opacity: 1.0}
-  37.33% {opacity: 0.0}
-  100% {opacity: 0.0}
-} */
-
-.banner.bg-1 {
-  background-image: url("../images/slide-1.jpg");
   position: absolute;
   right: 0;
   left: 0;
-  z-index: 3;
-  animation-delay: 0s;
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes slideshow {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.banner.bg-1 {
+  background-image: url("../images/slide-1.jpg");
+  animation: 12s slideshow infinite;
 }
 
 .banner.bg-2 {
   background-image: url("../images/slide-2.jpg");
-  /* display: none; */
-  position: absolute;
-  right: 0;
-  left: 0;
-  z-index: 2;
+  animation: 12s slideshow infinite;
   animation-delay: 4s;
 }
 
 .banner.bg-3 {
   background-image: url("../images/slide-3.jpg");
-  /* display: none; */
-  position: absolute;
-  right: 0;
-  left: 0;
-  z-index: 1;
+  animation: 12s slideshow infinite;
   animation-delay: 8s;
 }
 
@@ -351,7 +342,7 @@ section.padded {
 }
 
 .highlight-item:hover {
-  border-color : #222;
+  border-color: #222;
 }
 
 .highlight-item figure {

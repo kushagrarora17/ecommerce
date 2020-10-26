@@ -1,189 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/browse/reset-css@5.0.1/reset.css"
+    />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <title>Catalog</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/browse/reset-css@5.0.1/reset.css" />
-  <link rel="stylesheet" href="css/utils.css" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
-  <title>Catalog</title>
-</head>
+  <body>
+    <header class="relative">
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/shopping">Shopping</a>
+          </li>
+          <li>
+            <a href="/sales">Sales</a>
+          </li>
+          <li>
+            <a href="/new-arrivals">New Arrivals</a>
+          </li>
+          <li>
+            <a href="/coming-soon">Coming Soon</a>
+          </li>
+          <li>
+            <a href="/contact-us">Contact Us</a>
+          </li>
+        </ul>
 
-<body>
-  <header class="relative">
-    <nav class="main-nav">
-      <ul>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/shopping">Shopping</a>
-        </li>
-        <li>
-          <a href="/sales">Sales</a>
-        </li>
-        <li>
-          <a href="/new-arrivals">New Arrivals</a>
-        </li>
-        <li>
-          <a href="/coming-soon">Coming Soon</a>
-        </li>
-        <li>
-          <a href="/contact-us">Contact Us</a>
-        </li>
-      </ul>
-
-      <div>
-        <div class="cart">
-          <span class="text-primary text-bold">
-            <i class="fa fa-lg fa-shopping-cart"></i>
-            Cart:
-          </span>
-          <span class="count">0 items</span>
-        </div>
-
-        <select class="language">
-          <option value="English">English</option>
-        </select>
-
-        <button class="btn btn-light">Sign In</button>
-        <button class="btn btn-light ml-16">Register</button>
-      </div>
-    </nav>
-    <div class="spicestore">
-      <h1 title="Home">
-        <a href="/">spice<span class="word2">store</span> </a>
-      </h1>
-      <div class="search">
-        <form action="#">
-          <div class="borders">
-            <input type="text" placeholder="Search items..." name="search" />
-            <i class="search-icon fa fa-search fa-xs"> </i>
+        <div>
+          <div class="cart">
+            <span class="text-primary text-bold">
+              <i class="fa fa-lg fa-shopping-cart"></i>
+              Cart:
+            </span>
+            <span class="count">0 items</span>
           </div>
-        </form>
+
+          <select class="language">
+            <option value="English">English</option>
+          </select>
+
+          <button class="btn btn-light">Sign In</button>
+          <button class="btn btn-light ml-16">Register</button>
+        </div>
+      </nav>
+      <div class="spicestore">
+        <h1 title="Home">
+          <a href="/">spice<span class="word2">store</span> </a>
+        </h1>
+        <div class="search">
+          <form action="#">
+            <div class="borders">
+              <input type="text" placeholder="Search items..." name="search" />
+              <i class="search-icon fa fa-search fa-xs"> </i>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="menu" id="js-menu-bar">
+        <ul class="menu-list relative">
+          <li title="Apparel">
+            <a href="/apparels">Apparel</a>
+          </li>
+          <li title="Toys">
+            <a href="#">Toys</a>
+            <ul class="submenu-list">
+              <li title="RC Toys">
+                <a href="/rc-toys">RC Toys</a>
+              </li>
+              <li title="Science Toys">
+                <a href="/science-toys">Science Toys</a>
+              </li>
+              <li title="Puzzles">
+                <a href="/puzzles">Puzzles</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="banner-container">
+      <div id="js-slider1" class="banner bg-1">
+        <a href="#">
+          <h2 class="banner-title">
+            Everything you lacked <span class="emphasis">for cooking</span>
+          </h2>
+          <div class="details">
+            <p>
+              Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum .
+            </p>
+          </div>
+        </a>
+      </div>
+      <div id="js-slider2" class="banner bg-2">
+        <a href="#">
+          <h2 class="banner-title">
+            Exquisite spices <span class="emphasis">and seasonings</span>
+          </h2>
+          <div class="details">
+            <p>
+              Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum .
+            </p>
+          </div>
+        </a>
+      </div>
+      <div id="js-slider3" class="banner bg-3">
+        <a href="#">
+          <h2 class="banner-title">
+            Add salt <span class="emphasis">to your dish</span>
+          </h2>
+          <div class="details">
+            <p>
+              Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum .
+            </p>
+          </div>
+        </a>
       </div>
     </div>
-    <div class="menu" id="js-menu-bar">
-      <ul class="menu-list relative">
-        <li title="Apparel">
-          <a href="/apparels">Apparel</a>
-        </li>
-        <li title="Toys">
-          <a href="#">Toys</a>
-          <ul class="submenu-list">
-            <li title="RC Toys">
-              <a href="/rc-toys">RC Toys</a>
-            </li>
-            <li title="Science Toys">
-              <a href="/science-toys">Science Toys</a>
-            </li>
-            <li title="Puzzles">
-              <a href="/puzzles">Puzzles</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </header>
 
-  <div class="banner-container">
-    <div id="js-slider1" class="banner bg-1">
-      <a href="#">
-        <h2 class="banner-title">Everything you lacked <span class="emphasis">for cooking</span></h2>
-        <div class="details">
+    <section class="gutter padded">
+      <div class="highlights">
+        <div class="highlight-item">
+          <figure>
+            <img
+              src="/images/banner1.jpg"
+              alt="spices and herbs"
+              class="img-responsive"
+            />
+            <figcaption>Spices & herbs</figcaption>
+          </figure>
           <p>
             Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum .
+            eiusmod tempor incididunt.
           </p>
+          <button class="btn btn-light">Shop now!</button>
         </div>
-      </a>
-    </div>
-    <div id="js-slider2" class="banner bg-2">
-      <a href="#">
-        <h2 class="banner-title">Exquisite spices <span class="emphasis">and seasonings</span></h2>
-        <div class="details">
+        <div class="highlight-item">
+          <figure>
+            <img
+              src="/images/banner2.jpg"
+              alt="spices and herbs"
+              class="img-responsive"
+            />
+            <figcaption>Seasonings</figcaption>
+          </figure>
           <p>
             Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum .
+            eiusmod tempor incididunt.
           </p>
+          <button class="btn btn-light">Shop now!</button>
         </div>
-      </a>
-    </div>
-    <div id="js-slider3" class="banner bg-3">
-      <a href="#">
-        <h2 class="banner-title">Add salt <span class="emphasis">to your dish</span></h2>
-        <div class="details">
+        <div class="highlight-item">
+          <figure>
+            <img
+              src="/images/banner3.jpg"
+              alt="spices and herbs"
+              class="img-responsive"
+            />
+            <figcaption>Organic Spice Set</figcaption>
+          </figure>
           <p>
             Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum .
+            eiusmod tempor incididunt.
           </p>
+          <button class="btn btn-light">Shop now!</button>
         </div>
-      </a>
-    </div>
-  </div>
-
-  <section class="gutter padded">
-    <div class="highlights">
-      <div class="highlight-item">
-        <figure>
-          <img src="/images/banner1.jpg" alt="spices and herbs" class="img-responsive">
-          <figcaption>
-            Spices & herbs
-          </figcaption>
-        </figure>
-        <p>
-          Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.
-        </p>
-        <button class="btn btn-light">Shop now!</button>
       </div>
-      <div class="highlight-item">
-        <figure>
-          <img src="/images/banner2.jpg" alt="spices and herbs" class="img-responsive">
-          <figcaption>
-            Seasonings
-          </figcaption>
-        </figure>
-        <p>
-          Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.
-        </p>
-        <button class="btn btn-light">Shop now!</button>
-      </div>
-      <div class="highlight-item">
-        <figure>
-          <img src="/images/banner3.jpg" alt="spices and herbs" class="img-responsive">
-          <figcaption>
-            Organic Spice Set
-          </figcaption>
-        </figure>
-        <p>
-          Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.
-        </p>
-        <button class="btn btn-light">Shop now!</button>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <script src="script/main.js"></script>
-</body>
-
+    <script src="script/main.js"></script>
+  </body>
 </html>
