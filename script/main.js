@@ -43,31 +43,24 @@ const throttledSetMenuBar = throttle(setMenuBar, 500);
 
 window.addEventListener("scroll", throttledSetMenuBar);
 
-// let bannerContainer = document.getElementsByClassName("banner-container");
-// let sliderImg1 = document.getElementById("js-slider1");
-// let sliderImg2 = document.getElementById("js-slider2");
-// let sliderImg3 = document.getElementById("js-slider3");
+// TABS start
 
-// window.addEventListener("scroll", function(ev) {
-//   let menuOffset = menuBar.offsetTop;
-//   let currentScroll = document.documentElement.scrollTop;
+const tabBtns = document.getElementsByClassName("js-tab-btn");
+const tabContainers = document.getElementsByClassName("js-tab-container");
+let lastActiveTabIndex = 0;
 
-//   if(currentScroll > menuOffset) {
-//     if(!menuBar.classList.contains("fixed")) {
-//       menuBar.classList.add("fixed");
-//     }
-//   } else {
-//     if(menuBar.classList.contains("fixed")) {
-//       menuBar.classList.remove("fixed");
-//     }
-//   }
-// });
+for (let i = 0; i < tabBtns.length; i++) {
+  tabBtns[i].addEventListener("click", function (ev) {
+    tabBtns[lastActiveTabIndex].classList.remove("active");
+    tabContainers[lastActiveTabIndex].classList.remove("active");
 
-// setInterval( function () {
+    const target = ev.target;
 
-//   , 500);
+    target.classList.add("active");
+    lastActiveTabIndex = Number(target.getAttribute("data-id"));
 
-// setTimeout(function(){
-//   var v = object.style.zIndex;
+    tabContainers[lastActiveTabIndex].classList.add("active");
+  });
+}
 
-// },3000)
+// TABS end
