@@ -471,44 +471,42 @@ section.padded {
   color: #777;
 }
 
-.star-widget {
-  width: 175px;
-  height: 31px;
+  .rate {
+    width: 178px;
+    height: 31px;
+    padding-bottom: 8px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:18px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
 }
 
-.star-widget input {
-  display: none;
-}
-
-.star-widget label {
-  font-size: 18px;
-  color: #d3d3d3;
-  padding: 0;
-  float: right;
-  transition: all 0.2s ease;
-}
-
-/* .star-widget > input:checked ~ label, 
-     .star-widget:not(:checked) > label:hover, 
-      .star-widget:not(:checked) > label:hover ~ label {
-  color: #ffd700;
-}
-
-.star-widget > input:checked + label:hover,
-.star-widget > input:checked ~ label:hover,
-.star-widget > label:hover ~ input:checked ~ label,
-.star-widget > input:checked ~ label:hover ~ label {
-  color: #ffed85;
-} */
-
-input:not(:checked) ~ label:hover,
-input:not(:checked) ~ label:hover ~ label{
-  color: #D2691E;
-}
-input:checked ~ label{
-  color: #FF8C00; 
-  /* "checked" not working */
-}
 
 .product-btn {
   border: 2px solid #ddd;
@@ -517,12 +515,12 @@ input:checked ~ label{
   padding: 6px;
   cursor: pointer;
   background-color: #fff;
+  transition: background-color 400ms linear;
 }
 
 .product-btn:hover {
   background-color: #222;
   border: none;
-  transition: background-color 400ms linear;
 }
 .cart-btn {
   background-color: #4c884c;
