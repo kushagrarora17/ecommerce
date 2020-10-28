@@ -14,3 +14,8 @@
   width: 100%;
   max-height: auto;
 }
+
+.img-responsive-fit {
+  width: 100%;
+  max-height: fit-content;
+}

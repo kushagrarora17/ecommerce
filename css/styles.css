@@ -382,3 +382,159 @@ section.padded {
   margin-bottom: 8px;
   color: #555;
 }
+
+.categories {
+  display: block;
+  position: relative;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+.tab-1 {
+  margin-right: 30px;
+}
+
+.tab-2 {
+  margin-left: 30px;
+}
+
+.categories a:hover {
+  color: #4c884c;
+}
+
+.categories a:active {
+  color: #4c884c;
+}
+
+.tab-container1 {
+  display: block;
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.bestsellers {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.bestsellers::after {
+  content: "";
+  flex: auto;
+}
+
+.bestsellers-item {
+  border: 2px solid #eee;
+  padding: 8px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 265px;
+  height: 400px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  transition: border-color 400ms ease;
+}
+
+.bestsellers-item:hover {
+  border-color: #222;
+}
+
+.bestsellers-item figure {
+  width: 60%;
+  height: 150px;
+  padding-left: 60px;
+  padding-top: 40px;
+  margin: 0 0 16px;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.item-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #4c884c;
+  cursor: pointer;
+}
+
+.item-name:hover {
+  color: #333;
+}
+
+.item-price {
+  font-size: 18px;
+  font-weight: bolder;
+  color: #777;
+}
+
+  .rate {
+    width: 178px;
+    height: 31px;
+    padding-bottom: 8px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:18px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
+.product-btn {
+  border: 2px solid #ddd;
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 400ms linear;
+}
+
+.product-btn:hover {
+  background-color: #222;
+  border: none;
+}
+.cart-btn {
+  background-color: #4c884c;
+  border: none;
+  margin-right: 6px;
+}
+
+.info-btn {
+  margin-left: 6px;
+}
+
+.cart-icon {
+  color: #fff;
+}
+.info-icon {
+  color: #ddd;
+}
