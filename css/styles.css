@@ -328,7 +328,7 @@ section.padded {
 .highlights {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 32px;
+  margin-bottom: 48px;
 }
 
 .highlight-item {
@@ -384,19 +384,28 @@ section.padded {
 }
 
 .categories {
-  display: block;
-  position: relative;
   text-align: center;
-  font-weight: bolder;
-  font-size: 14px;
 }
 
-.tab-1 {
-  margin-right: 30px;
+.tab-buttons {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  color: #555;
 }
 
-.tab-2 {
-  margin-left: 30px;
+.tab-buttons:focus {
+  outline: none;
+}
+
+.tab-buttons:first-child {
+  margin-right: 40px;
+}
+
+.tab-buttons.active {
+  color: #4c884c;
 }
 
 .categories a:hover {
@@ -407,14 +416,14 @@ section.padded {
   color: #4c884c;
 }
 
-.tab-container1 {
-  display: block;
-  padding-left: 16px;
-  padding-right: 16px;
-  max-width: 1200px;
-  margin: 0 auto;
+.tab-container {
   padding-top: 32px;
   padding-bottom: 32px;
+  display: none;
+}
+
+.tab-container.active {
+  display: block;
 }
 
 .bestsellers {
@@ -471,42 +480,41 @@ section.padded {
   color: #777;
 }
 
-  .rate {
-    width: 178px;
-    height: 31px;
-    padding-bottom: 8px;
+.rate {
+  width: 178px;
+  height: 31px;
+  padding-bottom: 8px;
 }
 .rate:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
+  position: absolute;
+  top: -9999px;
 }
 .rate:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:18px;
-    color:#ccc;
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 18px;
+  color: #ccc;
 }
 .rate:not(:checked) > label:before {
-    content: '★ ';
+  content: "★ ";
 }
 .rate > input:checked ~ label {
-    color: #ffc700;    
+  color: #ffc700;
 }
 .rate:not(:checked) > label:hover,
 .rate:not(:checked) > label:hover ~ label {
-    color: #deb217;  
+  color: #deb217;
 }
 .rate > input:checked + label:hover,
 .rate > input:checked + label:hover ~ label,
 .rate > input:checked ~ label:hover,
 .rate > input:checked ~ label:hover ~ label,
 .rate > label:hover ~ input:checked ~ label {
-    color: #c59b08;
+  color: #c59b08;
 }
-
 
 .product-btn {
   border: 2px solid #ddd;
