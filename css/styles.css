@@ -66,6 +66,19 @@ header {
   color: #fff;
 }
 
+.btn-primary {
+  background-color: #4c884c;
+  color: #fff;
+  border: 2px solid #4c884c;
+  transition: background-color 400ms linear;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #555;
+  border: 2px solid #fff;
+}
+
 .text-primary {
   color: #4c884c !important;
 }
@@ -313,18 +326,6 @@ input::placeholder {
   color: #000;
 }
 
-section.gutter {
-  padding-left: 16px;
-  padding-right: 16px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-section.padded {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .highlights {
   display: flex;
   justify-content: space-between;
@@ -545,4 +546,34 @@ section.padded {
 }
 .info-icon {
   color: #ddd;
+}
+
+.section-special {
+  background-image: url("../images/img-bg2.jpg");
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.section-special h1 {
+  font-size: 88px;
+  font-weight: 500;
+  line-height: 1.2;
+  width: 70%;
+  margin: 0 auto 24px;
+}
+
+.section-special p {
+  font-size: 13px;
+  margin-bottom: 28px;
+  font-weight: 500;
+}
+
+.section-special button {
+  padding: 18px 32px;
+  font-size: 18px;
+}
+
+.spl-section-padding {
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
