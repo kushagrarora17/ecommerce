@@ -577,3 +577,125 @@ input::placeholder {
   padding-top: 96px;
   padding-bottom: 96px;
 }
+
+.cards-content {
+  padding-top: 40px;
+  padding-bottom: 0;
+}
+
+.cards-content h1 {
+  font-size: 32px;
+  color: #4c884c;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.cards-item {
+  padding-bottom: 22px;
+}
+
+.cards-item:hover {
+  background-color: #4c884c;
+  border: none;
+}
+
+
+.cards-item:hover h1 {
+  color: #fff;
+}
+
+.cards-item:hover p {
+  color: #fff;
+}
+
+.cards-item:hover button {
+  background-color: #4c884c;
+  color: #fff;
+}
+
+.cards-item button:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  /* flex-flow: row wrap; */
+}
+
+.footer-menu > ul {
+  list-style: none;
+} 
+
+.footer-list {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list > li {
+  padding: 5px;
+  font-size: 14px;
+  list-style: none;
+}
+
+.footer-menu span {
+  font-weight: bolder;
+  color: #777;
+  margin: 5px;
+  margin-bottom: 40px !important;
+}
+
+.footer-list > li:hover {
+  color: #000;
+}
+
+.store-address {
+  pointer-events: none;
+}
+
+.store-phone{
+  pointer-events: none;
+}
+
+.store-phone span {
+  color: #4c884c;
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+.store-mail span {
+  pointer-events: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+}
+
+.store-mail a:hover {
+  color: #4c884c;
+}
+
+
+.footer {
+  text-align: center;
+  font-size: 13px;
+  margin: 15px;
+}
+
+.footer a{
+  padding: 20px;
+}
+
+.footer a:hover {
+  color: #000;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 11px;
+  margin: 25px;
+}
+
+.copyright a:hover {
+  color: #000;
+}
