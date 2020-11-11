@@ -592,16 +592,32 @@ input::placeholder {
 
 .cards-item {
   padding-bottom: 22px;
+  transition: background-color 200ms linear;
+  overflow: hidden;
+}
+
+.cards-item button {
+  background-color: transparent;
 }
 
 .cards-item:hover {
   background-color: #4c884c;
-  border: none;
+  border-color: transparent;
 }
-
 
 .cards-item:hover h1 {
   color: #fff;
+  animation: slide-right 300ms ease;
+  will-change: transform;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .cards-item:hover p {
@@ -609,7 +625,6 @@ input::placeholder {
 }
 
 .cards-item:hover button {
-  background-color: #4c884c;
   color: #fff;
 }
 
@@ -626,7 +641,7 @@ input::placeholder {
 
 .footer-menu > ul {
   list-style: none;
-} 
+}
 
 .footer-list {
   padding: 0;
@@ -634,7 +649,7 @@ input::placeholder {
 }
 
 .footer-list > li {
-  padding: 5px;
+  padding: 5px 0;
   font-size: 14px;
   list-style: none;
 }
@@ -654,7 +669,7 @@ input::placeholder {
   pointer-events: none;
 }
 
-.store-phone{
+.store-phone {
   pointer-events: none;
 }
 
@@ -675,14 +690,13 @@ input::placeholder {
   color: #4c884c;
 }
 
-
 .footer {
   text-align: center;
   font-size: 13px;
   margin: 15px;
 }
 
-.footer a{
+.footer a {
   padding: 20px;
 }
 
@@ -698,4 +712,9 @@ input::placeholder {
 
 .copyright a:hover {
   color: #000;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
 }
