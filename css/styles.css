@@ -611,12 +611,42 @@ input::placeholder {
   will-change: transform;
 }
 
+.cards-item:hover p {
+  color: #fff;
+  animation: slide-left 300ms ease;
+  will-change: transform;
+}
+
+.cards-item:hover button {
+  color: #fff;
+  animation: slide-up 300ms ease;
+  will-change: transform;
+}
+
 @keyframes slide-right {
   0% {
     transform: translateX(-100%);
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
