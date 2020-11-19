@@ -41,7 +41,10 @@ function setMenuBar() {
 
 const throttledSetMenuBar = throttle(setMenuBar, 500);
 
-window.addEventListener("scroll", throttledSetMenuBar);
+if(document.body.clientWidth > 380) {
+  window.addEventListener("scroll", throttledSetMenuBar);
+}
+
 
 // TABS start
 

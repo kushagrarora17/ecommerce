@@ -47,6 +47,10 @@ header {
   color: #222;
 }
 
+.main-nav .btn-group {
+  display: inline-block;
+}
+
 .btn {
   border: 2px solid #ddd;
   padding: 12px;
@@ -117,11 +121,10 @@ a {
 .spicestore h1 {
   font-size: 68px;
   color: #4c884c;
-  margin-top: -1px;
-  margin-bottom: -1px;
+  margin-top: 0;
+  margin-bottom: 0;
   cursor: pointer;
   padding-top: 5px;
-  flex-shrink: 0;
 }
 
 .word2 {
@@ -136,7 +139,8 @@ a {
 .borders {
   border: 1px solid #eee;
 }
-input {
+
+.input-search {
   border-top-width: 12px;
   border-bottom-width: 12px;
   border-left-width: 12px;
@@ -747,4 +751,49 @@ input::placeholder {
 #map {
   height: 400px;
   width: 100%;
+}
+
+
+@media screen and (max-width: 380px){
+
+  .main-nav {
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+
+  .main-nav ul {
+    margin-bottom: 12px;
+  }
+
+  .main-nav li {
+    font-weight: 400;
+    color: #777;
+    font-size: 13px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .cart {
+    margin-bottom: 12px;
+  }
+
+  .language {
+    margin-bottom: 12px;
+  }
+
+  .main-nav .btn-group {
+    display: block;
+  }
+
+  .spicestore {
+    flex-direction: column;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .input-search {
+    width: 80%;
+  }
 }
