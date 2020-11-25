@@ -233,6 +233,10 @@ input::placeholder {
   display: block;
 }
 
+.mobile-view-menu {
+  display: none;
+}
+
 .banner-container {
   height: 392px;
   position: relative;
@@ -796,4 +800,52 @@ input::placeholder {
   .input-search {
     width: 80%;
   }
+
+  .menu-list {
+    display: none;
+  }
+
+  .mobile-view-menu {
+    display: block;
+  }
+
+  .mobile-view-menu span {
+    border: 2px solid #ddd;
+    padding: 15px;
+    font-weight: bold;
+    color: #555;
+    font-size: large;
+  }
+  .mobile-view-menu i {
+    margin-left: 174px;
+  }
+  .mobile-view-menu-list {
+    border: 2px solid #ddd;
+    display: none;
+  }
+  .mobile-view-menu-list li {
+    list-style: none;
+    padding:15px;
+    font-size: small;
+    font-weight: bold;
+    color: #777;
+    margin-left: -40px;
+  }
+ .toys i {
+    padding-left: 85px;
+ }
+ .mobile-view-submenu-list {
+   list-style: none;
+   border: 2px solid #ddd;
+   margin-block-start: -1em;
+   font-size: 16px;
+   font-weight: bold;
+   display: none;
+ }
+ .mobile-view-submenu-list li {
+   margin: 15px;
+ }
+ .banner-container {
+   margin-top: 30px;
+ }
 }

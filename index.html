@@ -33,6 +33,19 @@
       src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0"
       nonce="tqyfqGtU"
     ></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(document).on("click", "#plus-minus-toggle", function () {
+        $(this).find("i").toggleClass("fa-plus fa-minus");
+      });
+      $(document).on("click", "#js-mobile-menu-bar", function () {
+        $(".mobile-view-menu-list").toggle('show');
+      });
+        $(document).on("click", "#js-mobile-view-menu-list", function () {
+        $(".mobile-view-submenu-list").toggle('show');
+        event.preventDefault();
+      });
+    </script>
   </head>
 
   <body>
@@ -85,7 +98,12 @@
         <div class="search">
           <form action="#">
             <div class="borders">
-              <input class="input-search" type="text" placeholder="Search items..." name="search" />
+              <input
+                class="input-search"
+                type="text"
+                placeholder="Search items..."
+                name="search"
+              />
               <i class="search-icon fa fa-search fa-xs"> </i>
             </div>
           </form>
@@ -109,6 +127,30 @@
                 <a href="/puzzles">Puzzles</a>
               </li>
             </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mobile-view-menu" id="js-mobile-menu-bar">
+        <span id="plus-minus-toggle">CATEGORIES <i class="fa fa-plus icon fa-lg"></i></span>
+        <ul class="mobile-view-menu-list relative" id="js-mobile-view-menu-list">
+          <li title="Apparel">
+            <a href="/apparels">Apparel</a>
+          </li>
+          <li title="Toys" id="plus-minus-toggle" class="toys">
+            <a href="#">Toys <i class="fa fa-plus icon fa-lg"></i></a>
+          </ul>
+            <ul class="mobile-view-submenu-list">
+              <li title="RC Toys">
+                <a href="/rc-toys">RC Toys</a>
+              </li>
+              <li title="Science Toys">
+                <a href="/science-toys">Science Toys</a>
+              </li>
+              <li title="Puzzles">
+                <a href="/puzzles">Puzzles</a>
+              </li>
+            <!-- </ul> -->
           </li>
         </ul>
       </div>

@@ -45,7 +45,15 @@ if(document.body.clientWidth > 380) {
   window.addEventListener("scroll", throttledSetMenuBar);
 }
 
+// window.addEventListener("click", showhide)
 
+// function showhide() {
+//   var menuList = document.getElementsByClassName("mobile-view-menu-list");
+//   var subMenuList = document.getElementsByClassName("mobile-view-submenu-list");
+//   if (menuList.style.display !== "block"){
+//     menuList.style.display = "block";
+//   }
+// }
 // TABS start
 
 const tabBtns = document.getElementsByClassName("js-tab-btn");
