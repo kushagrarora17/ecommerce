@@ -33,19 +33,6 @@
       src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0"
       nonce="tqyfqGtU"
     ></script>
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script>
-      $(document).on("click", "#plus-minus-toggle", function () {
-        $(this).find("i").toggleClass("fa-plus fa-minus");
-      });
-      $(document).on("click", "#js-mobile-menu-bar", function () {
-        $(".mobile-view-menu-list").toggle('show');
-      });
-        $(document).on("click", "#js-mobile-view-menu-list", function () {
-        $(".mobile-view-submenu-list").toggle('show');
-        event.preventDefault();
-      });
-    </script>
   </head>
 
   <body>
@@ -132,15 +119,16 @@
       </div>
 
       <div class="mobile-view-menu" id="js-mobile-menu-bar">
-        <span id="plus-minus-toggle">CATEGORIES <i class="fa fa-plus icon fa-lg"></i></span>
-        <ul class="mobile-view-menu-list relative" id="js-mobile-view-menu-list">
+        <div id="plus-minus-toggle" class="categories-toggle js-toggle-switch" data-target="js-mobile-view-menu-list">CATEGORIES <i class="fa fa-plus icon fa-lg plus-icon"></i></div>
+        <div class="mobile-view-menu-list relative" id="js-mobile-view-menu-list">
+        <ul>
           <li title="Apparel">
             <a href="/apparels">Apparel</a>
           </li>
-          <li title="Toys" id="plus-minus-toggle" class="toys">
-            <a href="#">Toys <i class="fa fa-plus icon fa-lg"></i></a>
-          </ul>
-            <ul class="mobile-view-submenu-list">
+          <li title="Toys" id="plus-minus-toggle" class="js-toggle-switch toys" data-target="js-mobile-view-submenu-list">
+            <a href="#">Toys <i class="fa fa-plus icon fa-lg plus-icon"></i></a>
+          </div>
+            <ul class="mobile-view-submenu-list" id="js-mobile-view-submenu-list">
               <li title="RC Toys">
                 <a href="/rc-toys">RC Toys</a>
               </li>
@@ -150,7 +138,7 @@
               <li title="Puzzles">
                 <a href="/puzzles">Puzzles</a>
               </li>
-            <!-- </ul> -->
+            </ul>
           </li>
         </ul>
       </div>
@@ -637,7 +625,7 @@
     <section class="section-special">
       <div class="gutter text-center spl-section-padding">
         <h1 class="noselect">
-          Make your every <span class="text-bold">dish special</span>
+          Make your every <br> <span class="text-bold">dish special</span>
         </h1>
         <p class="noselect">
           Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
@@ -681,8 +669,9 @@
           <button class="btn btn-light">Read more</button>
         </div>
       </div>
-
+      <div class="map-container">
       <div id="map"></div>
+     </div>
     </section>
 
     <footer class="footer-menu gutter padded">

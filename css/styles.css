@@ -809,15 +809,19 @@ input::placeholder {
     display: block;
   }
 
-  .mobile-view-menu span {
+  .mobile-view-menu ul {
+    padding: 0;
+  }
+
+  .categories-toggle {
     border: 2px solid #ddd;
     padding: 15px;
     font-weight: bold;
-    color: #555;
-    font-size: large;
+    color: #333;
+    font-size: 18px;
   }
   .mobile-view-menu i {
-    margin-left: 174px;
+    float: right;
   }
   .mobile-view-menu-list {
     border: 2px solid #ddd;
@@ -829,7 +833,6 @@ input::placeholder {
     font-size: small;
     font-weight: bold;
     color: #777;
-    margin-left: -40px;
   }
  .toys i {
     padding-left: 85px;
@@ -837,7 +840,7 @@ input::placeholder {
  .mobile-view-submenu-list {
    list-style: none;
    border: 2px solid #ddd;
-   margin-block-start: -1em;
+   margin-top: 0;
    font-size: 16px;
    font-weight: bold;
    display: none;
@@ -847,5 +850,72 @@ input::placeholder {
  }
  .banner-container {
    margin-top: 30px;
+   height: 110px;
+ }
+
+ .banner {
+  background-position: top;
+  padding-top: 0;
+  height: 100px;
+ }
+
+ .banner-title {
+   font-size: 25px;
+ }
+
+ .details {
+   display: none;
+ }
+
+ .highlights {
+   display: block;
+ }
+
+ .highlight-item {
+  width: fit-content;
+  margin-top: 30px;
+ }
+
+ .gutter {
+   padding: 0;
+ }
+
+ .section-special {
+  padding-bottom:60px;
+}
+
+ .section-special h1 {
+   width: fit-content;
+   font-size: 65px;
+   font-weight: 400;
+   padding-top: 50px;
+   padding-right: 20px;
+   padding-left: 20px;
+ }
+
+ .section-special p {
+   margin: 0;
+   padding: 25px;
+   padding-top: 0;
+   font-size: 13px;
+   font-weight: 400;
+ }
+
+ .cards-item {
+   margin: 30px 20px;
+ }
+
+ .map-container {
+   padding-left: 20px;
+   padding-right: 20px;
+ }
+
+ .footer-menu {
+   display: block;
+   margin: 20px;
+ }
+
+ .footer-list > li {
+   font-size: 12px;
  }
 }

@@ -45,15 +45,15 @@ if(document.body.clientWidth > 380) {
   window.addEventListener("scroll", throttledSetMenuBar);
 }
 
-// window.addEventListener("click", showhide)
+var toggleSwitch = document.getElementsByClassName("js-toggle-switch");
+for (let i = 0; i<toggleSwitch.length; i++){
+  toggleSwitch[i].addEventListener("click",function (source) {
+    // console.log(toggleSwitch[i].innerText);
+    const targetId = toggleSwitch[i].getAttribute("data-target");
+    document.getElementById(targetId).classList.toggle("show");
+    })
+}
 
-// function showhide() {
-//   var menuList = document.getElementsByClassName("mobile-view-menu-list");
-//   var subMenuList = document.getElementsByClassName("mobile-view-submenu-list");
-//   if (menuList.style.display !== "block"){
-//     menuList.style.display = "block";
-//   }
-// }
 // TABS start
 
 const tabBtns = document.getElementsByClassName("js-tab-btn");
