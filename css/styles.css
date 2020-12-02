@@ -791,14 +791,20 @@ input::placeholder {
 
   .spicestore {
     flex-direction: column;
+    margin-bottom: 0;
   }
 
   .search {
     width: 100%;
+    padding-top: 25px;
   }
 
   .input-search {
     width: 80%;
+  }
+
+  .menu {
+    margin-bottom: 40px;
   }
 
   .menu-list {
@@ -860,7 +866,8 @@ input::placeholder {
  }
 
  .banner-title {
-   font-size: 25px;
+   font-size: 30px;
+   margin-top: 5px;
  }
 
  .details {
@@ -874,6 +881,21 @@ input::placeholder {
  .highlight-item {
   width: fit-content;
   margin-top: 30px;
+ }
+
+ .highlight-item figure {
+   margin-bottom: 0;
+ }
+
+ .highlight-item figcaption {
+  font-size: 24px;
+  padding: 14px 0;
+ }
+
+ .highlight-item p {
+   padding: 0;
+   margin-top: 0;
+   font-size: 14px;
  }
 
  .gutter {
