@@ -47,10 +47,12 @@ if(document.body.clientWidth > 380) {
 
 var toggleSwitch = document.getElementsByClassName("js-toggle-switch");
 for (let i = 0; i<toggleSwitch.length; i++){
-  toggleSwitch[i].addEventListener("click",function (source) {
+  toggleSwitch[i].addEventListener("click",function () {
     // console.log(toggleSwitch[i].innerText);
+
     const targetId = toggleSwitch[i].getAttribute("data-target");
     document.getElementById(targetId).classList.toggle("show");
+    toggleSwitch[i].classList.toggle("active");
     })
 }
 
