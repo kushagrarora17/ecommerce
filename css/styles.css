@@ -233,6 +233,10 @@ input::placeholder {
   display: block;
 }
 
+.mobile-view-menu {
+  display: none;
+}
+
 .banner-container {
   height: 392px;
   position: relative;
@@ -787,13 +791,153 @@ input::placeholder {
 
   .spicestore {
     flex-direction: column;
+    margin-bottom: 0;
   }
 
   .search {
     width: 100%;
+    padding-top: 25px;
   }
 
   .input-search {
     width: 80%;
   }
+
+  .menu {
+    margin-bottom: 40px;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .mobile-view-menu {
+    display: block;
+  }
+
+  .mobile-view-menu ul {
+    padding: 0;
+  }
+
+  .categories-toggle {
+    border: 2px solid #ddd;
+    padding: 15px;
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+  }
+  .mobile-view-menu i {
+    float: right;
+  }
+  .mobile-view-menu-list {
+    border: 2px solid #ddd;
+    display: none;
+  }
+  .mobile-view-menu-list li {
+    list-style: none;
+    padding:15px;
+    font-size: small;
+    font-weight: bold;
+    color: #777;
+  }
+ .toys i {
+    padding-left: 85px;
+ }
+ .mobile-view-submenu-list {
+   list-style: none;
+   border: 2px solid #ddd;
+   margin-top: 0;
+   font-size: 16px;
+   font-weight: bold;
+   display: none;
+ }
+ .mobile-view-submenu-list li {
+   margin: 15px;
+ }
+ .banner-container {
+   margin-top: 30px;
+   height: 110px;
+ }
+
+ .banner {
+  background-position: top;
+  padding-top: 0;
+  height: 100px;
+ }
+
+ .banner-title {
+   font-size: 30px;
+   margin-top: 5px;
+ }
+
+ .details {
+   display: none;
+ }
+
+ .highlights {
+   display: block;
+ }
+
+ .highlight-item {
+  width: fit-content;
+  margin-top: 30px;
+ }
+
+ .highlight-item figure {
+   margin-bottom: 0;
+ }
+
+ .highlight-item figcaption {
+  font-size: 24px;
+  padding: 14px 0;
+ }
+
+ .highlight-item p {
+   padding: 0;
+   margin-top: 0;
+   font-size: 14px;
+ }
+
+ .gutter {
+   padding: 0;
+ }
+
+ .section-special {
+  padding-bottom:60px;
+}
+
+ .section-special h1 {
+   width: fit-content;
+   font-size: 65px;
+   font-weight: 400;
+   padding-top: 50px;
+   padding-right: 20px;
+   padding-left: 20px;
+ }
+
+ .section-special p {
+   margin: 0;
+   padding: 25px;
+   padding-top: 0;
+   font-size: 13px;
+   font-weight: 400;
+ }
+
+ .cards-item {
+   margin: 30px 20px;
+ }
+
+ .map-container {
+   padding-left: 20px;
+   padding-right: 20px;
+ }
+
+ .footer-menu {
+   display: block;
+   margin: 20px;
+ }
+
+ .footer-list > li {
+   font-size: 12px;
+ }
 }

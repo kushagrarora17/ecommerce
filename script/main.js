@@ -45,6 +45,14 @@ if(document.body.clientWidth > 380) {
   window.addEventListener("scroll", throttledSetMenuBar);
 }
 
+var toggleSwitch = document.getElementsByClassName("js-toggle-switch");
+for (let i = 0; i<toggleSwitch.length; i++){
+  toggleSwitch[i].addEventListener("click",function (source) {
+    // console.log(toggleSwitch[i].innerText);
+    const targetId = toggleSwitch[i].getAttribute("data-target");
+    document.getElementById(targetId).classList.toggle("show");
+    })
+}
 
 // TABS start
 
